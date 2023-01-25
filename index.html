@@ -70,12 +70,14 @@
             <div id="particles"></div>
             <!--Social Media Links-->
             <div class="social-media-links">
-                <a href="#"><img src="images/instagram logo.png" class="social-media"
+                <a href="#"><img src="images/instagram logo.png" target="_blank" class="social-media"
                         alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
-                <a href="#"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
-                <a href="https://www.linkedin.com/feed/"><img src="images/linkedin logo.png" class="social-media"
-                        alt="linkedin-logo"></a>
-                <a href="#"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
+                <a href="#"><img src="images/facebook logo.png" target="_blank" class="social-media"
+                        alt="facebook-logo"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin logo.png"
+                        class="social-media" alt="linkedin-logo"></a>
+                <a href="#"><img src="images/twitter logo.png" target="_blank" class="social-media"
+                        alt="twitter-logo"></a>
 
             </div>
             <!--Social Media Links end-->
@@ -589,14 +591,13 @@
                     <div class="form-header">
                         Message Me
                     </div>
-                    <form id="myForm" action="mailto:qiaomu414muqiao@gmail.com">
-                        <div class="input-line">
-                            <input id="name" type="text" placeholder="Name" class="input-name">
-                            <input id="email" type="email" placeholder="Email" class="input-name">
-                        </div>
+                    <form id="myForm" action="mailto:qiaomu414muqiao@gmail.com" method="POST" enctype="text/plain">
+                        <input id="name" type="text" placeholder="Name" class="input-name">
+                        <input id="email" type="email" placeholder="Email" class="input-name">
                         <input type="text" id="subject" placeholder="subject" class="input-subject">
                         <textarea id="body" class="input-textarea" placeholder="message"></textarea>
-                        <button type="button" id="submit" value="send">Submit</button>
+                        <!-- <button type="button" id="submit" value="send">Submit</button>-->
+                        <input type="submit" id='submit' value="Submit">
                     </form>
 
                 </div>
