@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Willy Wonkas - Personal Portfolio Website Template" />
+    <meta name="description" content="Personal Portfolio Website Template" />
     <meta name="keywords"
         content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
-    <meta name="author" content="willy wonka" />
-    <title>Willy Wonkas - Personal Portfolio Website Template</title>
+    <title>Personal Portfolio Website</title>
     <!--favicon-img-->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!--favicon-img-->
@@ -16,6 +15,8 @@
     <link rel="stylesheet" href="css/index.css">
     <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <!-- bootstrap file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 
 <body>
@@ -309,7 +310,7 @@
             <!--copyright-section You Can Remove After Downloading-->
             <div class="footer">
                 <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Portfolio
                 </div>
             </div>
             <!--copyright-section-->
@@ -350,98 +351,86 @@
             <div class="portfolio-header"> <span class="color"> My </span> Portfolio
                 <span class="header-caption"> Some Of My <span class="color"> Works</span></span>
             </div>
-            <div id="portfolio-content">
-                <div class="portfolio portfolio-first">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-third.jpg" alt="portfolio-first">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Face Recognize API</h2>
-                        <p>This widget mainly uses React as frontend framework, node.js for backend and Postgres as
+            <!-- <div id="portfolio-content"> -->
+            <div class="container text-center">
+                <div class="row row-cols-sm-2 row-cols-1 ">
+
+                    <!-- <div class="portfolio portfolio-first"> -->                
+                <div class="col d-flex align-items-stretch" style="margin-bottom: 5%">
+                    <div class="card shadow-sm">
+                        <img src="images/portfolio-third.jpg" class="card-img-top" alt="portfolio-first">
+                        <div class="card-body">
+                          <h5 class="card-title">Face Recognize API</h5>
+                          <p class="card-text">This widget mainly uses React as frontend framework, node.js for backend and Postgres as
                             relational
                             database to build a face targeting application bridging
                             with machine learning open tool from Clarify. All of the frondend, backend and database are
                             deployed on Render. The API is applied authentication on user register and sign in, and it
                             accepts an image url as input and will output the image
                             marked with a blue rectangle around the face region. </p>
-                        <div class="button"><a
-                                href="https://qiao-mu-face-recognize-frontend.onrender.com/"><button><span
-                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                          <a href="https://qiao-mu-face-recognize-frontend.onrender.com/" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio portfolio-second">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-fourth.jpg" alt="portfolio-second">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Yelp Camp</h2>
-                        <p>This full-stack application uses HTML/CSS/Javascript(bootstrap) for frontend,
+                <div class="col d-flex align-items-stretch" style="margin-bottom: 5%">
+                    <div class="card shadow-sm" >
+                        <img src="images/portfolio-fourth.jpg" class="card-img-top" alt="portfolio-first">
+                        <div class="card-body">
+                          <h5 class="card-title">Yelp Camp</h5>
+                          <p class="card-text">This full-stack application uses HTML/CSS/Javascript(bootstrap) for frontend,
                             Node.js/Express.js for
                             backend, MongoDB as database
                             to build CRUD functions for campgrounds/users with certain cookies/session management and
                             security checks. The tool also applied cloudinary API and
                             mapbox API to store images and fetch geographic maps.</p>
-                        <div class="button"><a href="https://qiao-mu-yelp-camp.onrender.com/"><button><span
-                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                          <a href="https://qiao-mu-yelp-camp.onrender.com/" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio portfolio-third">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-first.jpg" alt="portfolio-third">
+                <div class="col d-flex align-items-stretch" style="margin-bottom: 5%">
+                    <div class="card shadow-sm" >
+                        <img src="images/portfolio-7.jpg" class="card-img-top" alt="portfolio-first">
+                        <div class="card-body">
+                          <h5 class="card-title">Travel App</h5>
+                          <p class="card-text">This widget uses HTML/CSS/Javascript, Sass, Webpack, Service Workers to build a travel planner that have trip location-icon
+                            and date from the input, and displays weather and image caresoul of the location using geographic infomration obtained from external APIs.
+                                selects in the segmented
+                                control</p>
+                          <a href="https://github.com/qiaoooo/travel_app" class="btn btn-primary">View Project</a>
+                        </div>
                     </div>
-                    <div class="portfolio-text">
-                        <h2>Backgound color gradient</h2>
-                        <p>This widget uses HTML/CSS/Javascript to build a gradient layer by creating a function that
-                            uses color input to return a gradient background color, depending on which filter the user
-                            selects in the segmented
-                            control.</p>
-                        <div class="button"><a
-                                href="https://qiaoooo.github.io/background_color_generator/"><button><span
-                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                </div>    
+                <div class="col d-flex align-items-stretch" style="margin-bottom: 5%">
+                    <div class="card shadow-sm" >
+                        <img src="images/portfolio-second.jpg" class="card-img-top" alt="portfolio-first">
+                        <div class="card-body">
+                          <h5 class="card-title">Robot Friend Face</h5>
+                          <p class="card-text">This project uses HTML/CSS/Javascript(React framework) to build a robot face search engine</p>
+                          <a href="https://qiaoooo.github.io/robotfriends/" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio portfolio-fourth">
-                    <div class=" portfolio-image">
-                        <img src="images/portfolio-second.jpg" alt="portfolio-fourth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Robot Friend Face</h2>
-                        <p>This project uses HTML/CSS/Javascript(React framework) to build a robot face search engine
-                        </p>
-                        <div class="button"><a href="https://qiaoooo.github.io/robotfriends/"><button><span
-                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                <div class="col d-flex align-items-stretch" style="margin-bottom: 5%">
+                    <div class="card shadow-sm" >
+                        <img src="images/portfolio-fifth.jpg" class="card-img-top" alt="portfolio-first">
+                        <div class="card-body">
+                          <h5 class="card-title">Tic-Tac-Toe</h5>
+                          <p class="card-text">This project uses HTML/CSS/Javascript(React framework) to build a mini tic-tac-toe game</p>
+                          <a href="https://qiao-mu-tic-tac-toe.onrender.com/" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio portfolio-fifth">
-                    <div class=" portfolio-image">
-                        <img src="images/portfolio-fifth.jpg" alt="portfolio-fifth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Tic-Tac-Toe</h2>
-                        <p>This project uses HTML/CSS/Javascript(React framework) to build a mini tic-tac-toe game
-                        </p>
-                        <div class="button"><a href="https://qiao-mu-tic-tac-toe.onrender.com/"><button><span
-                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
+                <div class="col d-flex align-items-stretch" style="margin-bottom: 5%">
+                    <div class="card shadow-sm" >
+                        <img src="images/portfolio-sixth.jpg" class="card-img-top" alt="portfolio-first">
+                        <div class="card-body">
+                          <h5 class="card-title">Picture search</h5>
+                          <p class="card-text">This project uses HTML/CSS/Javascript(React framework) to build a picture search engine briding unsplash API</p>
+                          <a href="https://qiao-mu-search-engine.onrender.com/" class="btn btn-primary" >View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio portfolio-sixth">
-                    <div class=" portfolio-image">
-                        <img src="images/portfolio-sixth.jpg" alt="portfolio-sixth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Picture search</h2>
-                        <p>This project uses HTML/CSS/Javascript(React framework) to build a picture search engine briding unsplash API
-                        </p>
-                        <div class="button"><a href="https://qiao-mu-search-engine.onrender.com/"><button><span
-                                        class="index"> View Project<i class="gg-arrow-right"></i></span></button></a>
-                        </div>
-                    </div>
                 </div>
 
 
@@ -449,7 +438,7 @@
             <!--copyright-section You Can Remove After Downloading-->
             <div class="footer">
                 <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Portfolio
                 </div>
             </div>
             <!--copyright-section-->
@@ -587,7 +576,7 @@
             <!--copyright-section You Can Remove After Downloading-->
             <div class="footer">
                 <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Portfolio
                 </div>
             </div>
             <!--copyright-section-->
@@ -687,7 +676,7 @@
             <!--copyright-section You Can Remove After Downloading-->
             <div class="footer">
                 <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Portfolio
                 </div>
             </div>
             <!--copyright-section-->
@@ -703,6 +692,9 @@
     <script>
         particlesJS("particles", { "particles": { "number": { "value": 60, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#fff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 7, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": false, "distance": 500, "color": "#ffffff", "opacity": 0.4, "width": 2 }, "move": { "enable": true, "speed": 3, "direction": "bottom", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "bubble" }, "onclick": { "enable": true, "mode": "repulse" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 0.5 } }, "bubble": { "distance": 400, "size": 4, "duration": 0.3, "opacity": 1, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
 
 </body>
 

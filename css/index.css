@@ -999,6 +999,10 @@ button:hover .index {
     text-align: center;
 }
 
+.card{
+    height: 100%
+}
+
 .portfolio-image img {
     height: 400px;
     width: 100%;
@@ -1025,10 +1029,10 @@ button:hover .index {
 
 #portfolio-content {
     width: 100%;
-    display: flex;
+    display: grid;
     height: auto;
-    flex-direction: column;
-    justify-content: center;
+/*     flex-direction: column;
+ */    justify-content: center;
     overflow: hidden;
 }
 
